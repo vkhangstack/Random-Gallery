@@ -1,0 +1,3080 @@
+{
+  "config": {
+    "argv": [
+      "/Users/vkhangstack/.nvm/versions/node/v24.16.0/bin/node",
+      "/Users/vkhangstack/Documents/Coding/my-project-sdd/node_modules/playwright/cli.js",
+      "test",
+      "--list",
+      "--reporter=json"
+    ],
+    "configFile": "/Users/vkhangstack/Documents/Coding/my-project-sdd/playwright.config.ts",
+    "rootDir": "/Users/vkhangstack/Documents/Coding/my-project-sdd/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {},
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/vkhangstack/Documents/Coding/my-project-sdd/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/vkhangstack/Documents/Coding/my-project-sdd/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "e2e/**/*.spec.ts",
+          "integration/**/*.spec.ts"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "/Users/vkhangstack/Documents/Coding/my-project-sdd/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/Users/vkhangstack/Documents/Coding/my-project-sdd/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "e2e/**/*.spec.ts",
+          "integration/**/*.spec.ts"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "/Users/vkhangstack/Documents/Coding/my-project-sdd/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/Users/vkhangstack/Documents/Coding/my-project-sdd/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "e2e/**/*.spec.ts",
+          "integration/**/*.spec.ts"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 4,
+    "webServer": {
+      "command": "npm run build && npm run preview -- --host 127.0.0.1 --port 4173 --strictPort",
+      "url": "http://127.0.0.1:4173",
+      "reuseExistingServer": false,
+      "timeout": 120000
+    }
+  },
+  "suites": [
+    {
+      "title": "e2e/accessibility-responsive.spec.ts",
+      "file": "e2e/accessibility-responsive.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "layout and keyboard at 320px light",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "c60783a6c3a85d7e07a0-335c32481167ce6b9fb4",
+          "file": "e2e/accessibility-responsive.spec.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "layout and keyboard at 320px dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "c60783a6c3a85d7e07a0-3a6ba97fc00c3bfe7155",
+          "file": "e2e/accessibility-responsive.spec.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "layout and keyboard at 375px light",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "c60783a6c3a85d7e07a0-785f7d4a1fb1c9441c58",
+          "file": "e2e/accessibility-responsive.spec.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "layout and keyboard at 375px dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "c60783a6c3a85d7e07a0-b0395fd6c1d7d2d7e827",
+          "file": "e2e/accessibility-responsive.spec.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "layout and keyboard at 414px light",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "c60783a6c3a85d7e07a0-5b67e31775e63774bd69",
+          "file": "e2e/accessibility-responsive.spec.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "layout and keyboard at 414px dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "c60783a6c3a85d7e07a0-656ddf33ed1deeacd792",
+          "file": "e2e/accessibility-responsive.spec.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "layout and keyboard at 768px light",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "c60783a6c3a85d7e07a0-45a36982d6add3cba171",
+          "file": "e2e/accessibility-responsive.spec.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "layout and keyboard at 768px dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "c60783a6c3a85d7e07a0-5fd814a9f4fb596020aa",
+          "file": "e2e/accessibility-responsive.spec.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "layout and keyboard at 1440px light",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "c60783a6c3a85d7e07a0-73fb0871173f4a0cc9d9",
+          "file": "e2e/accessibility-responsive.spec.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "layout and keyboard at 1440px dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "c60783a6c3a85d7e07a0-d6d5aede134a88e05868",
+          "file": "e2e/accessibility-responsive.spec.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "complete primary keyboard journey in light theme",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "c60783a6c3a85d7e07a0-5bca242da286cf0bd144",
+          "file": "e2e/accessibility-responsive.spec.ts",
+          "line": 49,
+          "column": 3
+        },
+        {
+          "title": "landscape error and empty layout at 320px light",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "c60783a6c3a85d7e07a0-055070679b917a45d81c",
+          "file": "e2e/accessibility-responsive.spec.ts",
+          "line": 128,
+          "column": 5
+        },
+        {
+          "title": "landscape error and empty layout at 768px light",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "c60783a6c3a85d7e07a0-69121a51297de1917a73",
+          "file": "e2e/accessibility-responsive.spec.ts",
+          "line": 128,
+          "column": 5
+        },
+        {
+          "title": "landscape error and empty layout at 1440px light",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "c60783a6c3a85d7e07a0-c6b97ce2f2aeea3be942",
+          "file": "e2e/accessibility-responsive.spec.ts",
+          "line": 128,
+          "column": 5
+        },
+        {
+          "title": "complete primary keyboard journey in dark theme",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "c60783a6c3a85d7e07a0-aa4da478fd622f9d0753",
+          "file": "e2e/accessibility-responsive.spec.ts",
+          "line": 49,
+          "column": 3
+        },
+        {
+          "title": "landscape error and empty layout at 320px dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "c60783a6c3a85d7e07a0-ca3c524d85b7ebc8b7b2",
+          "file": "e2e/accessibility-responsive.spec.ts",
+          "line": 128,
+          "column": 5
+        },
+        {
+          "title": "landscape error and empty layout at 768px dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "c60783a6c3a85d7e07a0-c1e89065279286a88359",
+          "file": "e2e/accessibility-responsive.spec.ts",
+          "line": 128,
+          "column": 5
+        },
+        {
+          "title": "landscape error and empty layout at 1440px dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "c60783a6c3a85d7e07a0-7677159e463ffb115a6a",
+          "file": "e2e/accessibility-responsive.spec.ts",
+          "line": 128,
+          "column": 5
+        },
+        {
+          "title": "layout and keyboard at 320px light",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "c60783a6c3a85d7e07a0-e7dbc674f80aeca67ab6",
+          "file": "e2e/accessibility-responsive.spec.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "layout and keyboard at 320px dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "c60783a6c3a85d7e07a0-6d23ba7c6be816b08151",
+          "file": "e2e/accessibility-responsive.spec.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "layout and keyboard at 375px light",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "c60783a6c3a85d7e07a0-2ee6dc41a770535a89de",
+          "file": "e2e/accessibility-responsive.spec.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "layout and keyboard at 375px dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "c60783a6c3a85d7e07a0-1b63f7b41e883f49eaf9",
+          "file": "e2e/accessibility-responsive.spec.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "layout and keyboard at 414px light",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "c60783a6c3a85d7e07a0-dd7067650306bffd212c",
+          "file": "e2e/accessibility-responsive.spec.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "layout and keyboard at 414px dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "c60783a6c3a85d7e07a0-96592039fb1be610908d",
+          "file": "e2e/accessibility-responsive.spec.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "layout and keyboard at 768px light",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "c60783a6c3a85d7e07a0-9a89e9859b5148d3496a",
+          "file": "e2e/accessibility-responsive.spec.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "layout and keyboard at 768px dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "c60783a6c3a85d7e07a0-947c92ff455acaab8ecd",
+          "file": "e2e/accessibility-responsive.spec.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "layout and keyboard at 1440px light",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "c60783a6c3a85d7e07a0-23d2fafa5c7a311de71a",
+          "file": "e2e/accessibility-responsive.spec.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "layout and keyboard at 1440px dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "c60783a6c3a85d7e07a0-791fceb5325bcfcb0459",
+          "file": "e2e/accessibility-responsive.spec.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "complete primary keyboard journey in light theme",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "c60783a6c3a85d7e07a0-fbd215e3ded9ebe1f60b",
+          "file": "e2e/accessibility-responsive.spec.ts",
+          "line": 49,
+          "column": 3
+        },
+        {
+          "title": "landscape error and empty layout at 320px light",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "c60783a6c3a85d7e07a0-b7f1918ab44c47be6a31",
+          "file": "e2e/accessibility-responsive.spec.ts",
+          "line": 128,
+          "column": 5
+        },
+        {
+          "title": "landscape error and empty layout at 768px light",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "c60783a6c3a85d7e07a0-dd14857d09641d23cdaf",
+          "file": "e2e/accessibility-responsive.spec.ts",
+          "line": 128,
+          "column": 5
+        },
+        {
+          "title": "landscape error and empty layout at 1440px light",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "c60783a6c3a85d7e07a0-0210c9b378fdcb5d894f",
+          "file": "e2e/accessibility-responsive.spec.ts",
+          "line": 128,
+          "column": 5
+        },
+        {
+          "title": "complete primary keyboard journey in dark theme",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "c60783a6c3a85d7e07a0-309f8ce0d2d2bd8477ed",
+          "file": "e2e/accessibility-responsive.spec.ts",
+          "line": 49,
+          "column": 3
+        },
+        {
+          "title": "landscape error and empty layout at 320px dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "c60783a6c3a85d7e07a0-22574afa414c7a4805c4",
+          "file": "e2e/accessibility-responsive.spec.ts",
+          "line": 128,
+          "column": 5
+        },
+        {
+          "title": "landscape error and empty layout at 768px dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "c60783a6c3a85d7e07a0-1ad35387d79ced4fb122",
+          "file": "e2e/accessibility-responsive.spec.ts",
+          "line": 128,
+          "column": 5
+        },
+        {
+          "title": "landscape error and empty layout at 1440px dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "c60783a6c3a85d7e07a0-ec31f8b7836cfb553813",
+          "file": "e2e/accessibility-responsive.spec.ts",
+          "line": 128,
+          "column": 5
+        },
+        {
+          "title": "layout and keyboard at 320px light",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "c60783a6c3a85d7e07a0-f99f454cd407f3a4e199",
+          "file": "e2e/accessibility-responsive.spec.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "layout and keyboard at 320px dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "c60783a6c3a85d7e07a0-12171a493e16314b1dab",
+          "file": "e2e/accessibility-responsive.spec.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "layout and keyboard at 375px light",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "c60783a6c3a85d7e07a0-b7a9e0e711d32831d0ec",
+          "file": "e2e/accessibility-responsive.spec.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "layout and keyboard at 375px dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "c60783a6c3a85d7e07a0-146c8aaf36357138c95d",
+          "file": "e2e/accessibility-responsive.spec.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "layout and keyboard at 414px light",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "c60783a6c3a85d7e07a0-7a7a2144e6dc8143fa3a",
+          "file": "e2e/accessibility-responsive.spec.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "layout and keyboard at 414px dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "c60783a6c3a85d7e07a0-7f8809436ee17331c0ab",
+          "file": "e2e/accessibility-responsive.spec.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "layout and keyboard at 768px light",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "c60783a6c3a85d7e07a0-499304e6ae348699c430",
+          "file": "e2e/accessibility-responsive.spec.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "layout and keyboard at 768px dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "c60783a6c3a85d7e07a0-587c8d2f04a9f2d94828",
+          "file": "e2e/accessibility-responsive.spec.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "layout and keyboard at 1440px light",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "c60783a6c3a85d7e07a0-c9b4c80a9b0fe835c626",
+          "file": "e2e/accessibility-responsive.spec.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "layout and keyboard at 1440px dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "c60783a6c3a85d7e07a0-72eeb125dc6a7dc32a1b",
+          "file": "e2e/accessibility-responsive.spec.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "complete primary keyboard journey in light theme",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "c60783a6c3a85d7e07a0-7f1df236d9251b69d4df",
+          "file": "e2e/accessibility-responsive.spec.ts",
+          "line": 49,
+          "column": 3
+        },
+        {
+          "title": "landscape error and empty layout at 320px light",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "c60783a6c3a85d7e07a0-a22790a879f215f1ce10",
+          "file": "e2e/accessibility-responsive.spec.ts",
+          "line": 128,
+          "column": 5
+        },
+        {
+          "title": "landscape error and empty layout at 768px light",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "c60783a6c3a85d7e07a0-603a4762b591fa8b0598",
+          "file": "e2e/accessibility-responsive.spec.ts",
+          "line": 128,
+          "column": 5
+        },
+        {
+          "title": "landscape error and empty layout at 1440px light",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "c60783a6c3a85d7e07a0-6381993016c266730113",
+          "file": "e2e/accessibility-responsive.spec.ts",
+          "line": 128,
+          "column": 5
+        },
+        {
+          "title": "complete primary keyboard journey in dark theme",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "c60783a6c3a85d7e07a0-aca6b5f59c02fdcb7e1d",
+          "file": "e2e/accessibility-responsive.spec.ts",
+          "line": 49,
+          "column": 3
+        },
+        {
+          "title": "landscape error and empty layout at 320px dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "c60783a6c3a85d7e07a0-3b29d68b12bf0974575b",
+          "file": "e2e/accessibility-responsive.spec.ts",
+          "line": 128,
+          "column": 5
+        },
+        {
+          "title": "landscape error and empty layout at 768px dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "c60783a6c3a85d7e07a0-d0a7c6681770fc534c39",
+          "file": "e2e/accessibility-responsive.spec.ts",
+          "line": 128,
+          "column": 5
+        },
+        {
+          "title": "landscape error and empty layout at 1440px dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "c60783a6c3a85d7e07a0-86ff68b11c4da237ed5a",
+          "file": "e2e/accessibility-responsive.spec.ts",
+          "line": 128,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "e2e/gallery-management.spec.ts",
+      "file": "e2e/gallery-management.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "gallery search/favorites, confirmation and deletion persist",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "acc47df9cb7dc551ec29-7829def6a4a48190dc43",
+          "file": "e2e/gallery-management.spec.ts",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "deleting the displayed last image leaves a valid empty state",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "acc47df9cb7dc551ec29-f3c28d40fb596a5e1e22",
+          "file": "e2e/gallery-management.spec.ts",
+          "line": 38,
+          "column": 1
+        },
+        {
+          "title": "filtering an inspected image out keeps its viewer open and Random scope independent",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "acc47df9cb7dc551ec29-be8d8f32a365c8967471",
+          "file": "e2e/gallery-management.spec.ts",
+          "line": 57,
+          "column": 1
+        },
+        {
+          "title": "closing a preview whose trigger was filtered out restores focus to Gallery controls",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "acc47df9cb7dc551ec29-caceb7d917116ff00197",
+          "file": "e2e/gallery-management.spec.ts",
+          "line": 89,
+          "column": 1
+        },
+        {
+          "title": "gallery search/favorites, confirmation and deletion persist",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "acc47df9cb7dc551ec29-71627f47a40b5d7199e8",
+          "file": "e2e/gallery-management.spec.ts",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "deleting the displayed last image leaves a valid empty state",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "acc47df9cb7dc551ec29-1f5b579b94cacdc9ce0e",
+          "file": "e2e/gallery-management.spec.ts",
+          "line": 38,
+          "column": 1
+        },
+        {
+          "title": "filtering an inspected image out keeps its viewer open and Random scope independent",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "acc47df9cb7dc551ec29-68fe01c246848da8c5b8",
+          "file": "e2e/gallery-management.spec.ts",
+          "line": 57,
+          "column": 1
+        },
+        {
+          "title": "closing a preview whose trigger was filtered out restores focus to Gallery controls",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "acc47df9cb7dc551ec29-bc94a69b38e485c7a547",
+          "file": "e2e/gallery-management.spec.ts",
+          "line": 89,
+          "column": 1
+        },
+        {
+          "title": "gallery search/favorites, confirmation and deletion persist",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "acc47df9cb7dc551ec29-fcc92548c41ae1f31f0a",
+          "file": "e2e/gallery-management.spec.ts",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "deleting the displayed last image leaves a valid empty state",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "acc47df9cb7dc551ec29-231118cc8f014a820bfc",
+          "file": "e2e/gallery-management.spec.ts",
+          "line": 38,
+          "column": 1
+        },
+        {
+          "title": "filtering an inspected image out keeps its viewer open and Random scope independent",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "acc47df9cb7dc551ec29-479c553837a391dbe634",
+          "file": "e2e/gallery-management.spec.ts",
+          "line": 57,
+          "column": 1
+        },
+        {
+          "title": "closing a preview whose trigger was filtered out restores focus to Gallery controls",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "acc47df9cb7dc551ec29-07996d7bffb09ad4edcc",
+          "file": "e2e/gallery-management.spec.ts",
+          "line": 89,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "e2e/performance.spec.ts",
+      "file": "e2e/performance.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "100-image timing workload reports visible shuffle/search results",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "262cfaa7fcec86b40117-5397c7e20f5d075af883",
+          "file": "e2e/performance.spec.ts",
+          "line": 8,
+          "column": 1
+        },
+        {
+          "title": "100-image timing workload reports visible shuffle/search results",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "262cfaa7fcec86b40117-30cbdfb8881c48877dcd",
+          "file": "e2e/performance.spec.ts",
+          "line": 8,
+          "column": 1
+        },
+        {
+          "title": "100-image timing workload reports visible shuffle/search results",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "262cfaa7fcec86b40117-e0fd34b974b713150fb8",
+          "file": "e2e/performance.spec.ts",
+          "line": 8,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "e2e/privacy-storage-failures.spec.ts",
+      "file": "e2e/privacy-storage-failures.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "collection operations remain local and localStorage contains only theme",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d9b0a4bfb6e59d4d692e-b4c5c76757043446ed73",
+          "file": "e2e/privacy-storage-failures.spec.ts",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "a failed file storage transaction preserves later successes without false saves",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d9b0a4bfb6e59d4d692e-7bf67c270e8666808d27",
+          "file": "e2e/privacy-storage-failures.spec.ts",
+          "line": 35,
+          "column": 1
+        },
+        {
+          "title": "denied storage is an opening error, not an empty collection",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d9b0a4bfb6e59d4d692e-b7f8cd76d66f980d931d",
+          "file": "e2e/privacy-storage-failures.spec.ts",
+          "line": 63,
+          "column": 1
+        },
+        {
+          "title": "failed favorites and deletion retain saved state, with visible retry",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d9b0a4bfb6e59d4d692e-e2d8b9d3899361bca047",
+          "file": "e2e/privacy-storage-failures.spec.ts",
+          "line": 82,
+          "column": 1
+        },
+        {
+          "title": "failed theme save keeps a usable session preference",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d9b0a4bfb6e59d4d692e-9aee6ed9b8b04b799e38",
+          "file": "e2e/privacy-storage-failures.spec.ts",
+          "line": 116,
+          "column": 1
+        },
+        {
+          "title": "collection operations remain local and localStorage contains only theme",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d9b0a4bfb6e59d4d692e-6dd905275861f342a3d2",
+          "file": "e2e/privacy-storage-failures.spec.ts",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "a failed file storage transaction preserves later successes without false saves",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d9b0a4bfb6e59d4d692e-4b4c2eb772fa208c4c4d",
+          "file": "e2e/privacy-storage-failures.spec.ts",
+          "line": 35,
+          "column": 1
+        },
+        {
+          "title": "denied storage is an opening error, not an empty collection",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d9b0a4bfb6e59d4d692e-745001e91039b1308294",
+          "file": "e2e/privacy-storage-failures.spec.ts",
+          "line": 63,
+          "column": 1
+        },
+        {
+          "title": "failed favorites and deletion retain saved state, with visible retry",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d9b0a4bfb6e59d4d692e-b0524e14a0d77f89c0a9",
+          "file": "e2e/privacy-storage-failures.spec.ts",
+          "line": 82,
+          "column": 1
+        },
+        {
+          "title": "failed theme save keeps a usable session preference",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d9b0a4bfb6e59d4d692e-490c028625c01920e852",
+          "file": "e2e/privacy-storage-failures.spec.ts",
+          "line": 116,
+          "column": 1
+        },
+        {
+          "title": "collection operations remain local and localStorage contains only theme",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d9b0a4bfb6e59d4d692e-3db61016e591a99f3c8b",
+          "file": "e2e/privacy-storage-failures.spec.ts",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "a failed file storage transaction preserves later successes without false saves",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d9b0a4bfb6e59d4d692e-d7a14a12473eea2340cd",
+          "file": "e2e/privacy-storage-failures.spec.ts",
+          "line": 35,
+          "column": 1
+        },
+        {
+          "title": "denied storage is an opening error, not an empty collection",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d9b0a4bfb6e59d4d692e-586dbe7f5a3ce1b8ce30",
+          "file": "e2e/privacy-storage-failures.spec.ts",
+          "line": 63,
+          "column": 1
+        },
+        {
+          "title": "failed favorites and deletion retain saved state, with visible retry",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d9b0a4bfb6e59d4d692e-16188b41273b76de1e2c",
+          "file": "e2e/privacy-storage-failures.spec.ts",
+          "line": 82,
+          "column": 1
+        },
+        {
+          "title": "failed theme save keeps a usable session preference",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d9b0a4bfb6e59d4d692e-3998b759c2b186f04e7d",
+          "file": "e2e/privacy-storage-failures.spec.ts",
+          "line": 116,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "e2e/random-favorites.spec.ts",
+      "file": "e2e/random-favorites.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "random excludes current and favorites persist with last-favorite empty state",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "e35837e579e754ca0d17-7ead7026b79173a19cbc",
+          "file": "e2e/random-favorites.spec.ts",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "favorites-only selections exclude nonfavorites across 100 shuffles",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "e35837e579e754ca0d17-6a50d8d21cf88229b622",
+          "file": "e2e/random-favorites.spec.ts",
+          "line": 45,
+          "column": 1
+        },
+        {
+          "title": "missing blobs give an error and retry without claiming the collection is empty",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "e35837e579e754ca0d17-fad06c5f272759e1717c",
+          "file": "e2e/random-favorites.spec.ts",
+          "line": 82,
+          "column": 1
+        },
+        {
+          "title": "random excludes current and favorites persist with last-favorite empty state",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "e35837e579e754ca0d17-d2186b382813fae02888",
+          "file": "e2e/random-favorites.spec.ts",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "favorites-only selections exclude nonfavorites across 100 shuffles",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "e35837e579e754ca0d17-1cd6cad3a16ace3da36b",
+          "file": "e2e/random-favorites.spec.ts",
+          "line": 45,
+          "column": 1
+        },
+        {
+          "title": "missing blobs give an error and retry without claiming the collection is empty",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "e35837e579e754ca0d17-6fb7a4ee94b38bb289b6",
+          "file": "e2e/random-favorites.spec.ts",
+          "line": 82,
+          "column": 1
+        },
+        {
+          "title": "random excludes current and favorites persist with last-favorite empty state",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "e35837e579e754ca0d17-2f9d375bcbe7c8a0af66",
+          "file": "e2e/random-favorites.spec.ts",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "favorites-only selections exclude nonfavorites across 100 shuffles",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "e35837e579e754ca0d17-ef3ad0ebfa6f0f6b6072",
+          "file": "e2e/random-favorites.spec.ts",
+          "line": 45,
+          "column": 1
+        },
+        {
+          "title": "missing blobs give an error and retry without claiming the collection is empty",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "e35837e579e754ca0d17-48a9cdc242e1bbf4e580",
+          "file": "e2e/random-favorites.spec.ts",
+          "line": 82,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "e2e/uploads-persistence.spec.ts",
+      "file": "e2e/uploads-persistence.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "mixed uploads retain successes across refresh and page reopen",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d1a3204caf0bdc83f601-397afc6ca7931ff3abc9",
+          "file": "e2e/uploads-persistence.spec.ts",
+          "line": 6,
+          "column": 1
+        },
+        {
+          "title": "actual decoding, boundary validation, duplicate uploads and site-data loss",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d1a3204caf0bdc83f601-748cd3fac13710e7c64d",
+          "file": "e2e/uploads-persistence.spec.ts",
+          "line": 35,
+          "column": 1
+        },
+        {
+          "title": "browser restart with a persistent profile retains blobs",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d1a3204caf0bdc83f601-6111e1dd8c83ec6a7ff4",
+          "file": "e2e/uploads-persistence.spec.ts",
+          "line": 64,
+          "column": 1
+        },
+        {
+          "title": "mixed uploads retain successes across refresh and page reopen",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d1a3204caf0bdc83f601-e2db01a487fdaeb95b95",
+          "file": "e2e/uploads-persistence.spec.ts",
+          "line": 6,
+          "column": 1
+        },
+        {
+          "title": "actual decoding, boundary validation, duplicate uploads and site-data loss",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d1a3204caf0bdc83f601-a27dbb38508ac0cba8c1",
+          "file": "e2e/uploads-persistence.spec.ts",
+          "line": 35,
+          "column": 1
+        },
+        {
+          "title": "browser restart with a persistent profile retains blobs",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d1a3204caf0bdc83f601-e8a85a91ee902de4e825",
+          "file": "e2e/uploads-persistence.spec.ts",
+          "line": 64,
+          "column": 1
+        },
+        {
+          "title": "mixed uploads retain successes across refresh and page reopen",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d1a3204caf0bdc83f601-5291c6e1711586e8df8f",
+          "file": "e2e/uploads-persistence.spec.ts",
+          "line": 6,
+          "column": 1
+        },
+        {
+          "title": "actual decoding, boundary validation, duplicate uploads and site-data loss",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d1a3204caf0bdc83f601-a2e9065944b96f93671d",
+          "file": "e2e/uploads-persistence.spec.ts",
+          "line": 35,
+          "column": 1
+        },
+        {
+          "title": "browser restart with a persistent profile retains blobs",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d1a3204caf0bdc83f601-c26a6f4dd92edf08a310",
+          "file": "e2e/uploads-persistence.spec.ts",
+          "line": 64,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "integration/image-url.spec.ts",
+      "file": "integration/image-url.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "URL consumers release replaced, hidden, and closed images",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "77bc1dced59709c1f43d-b7502e863607b2b88973",
+          "file": "integration/image-url.spec.ts",
+          "line": 8,
+          "column": 1
+        },
+        {
+          "title": "a decode failure releases its URL while the error entry remains visible",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "77bc1dced59709c1f43d-413ee098d9927aa54208",
+          "file": "integration/image-url.spec.ts",
+          "line": 48,
+          "column": 1
+        },
+        {
+          "title": "URL consumers release replaced, hidden, and closed images",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "77bc1dced59709c1f43d-34e0f1bf34aa1dd39743",
+          "file": "integration/image-url.spec.ts",
+          "line": 8,
+          "column": 1
+        },
+        {
+          "title": "a decode failure releases its URL while the error entry remains visible",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "77bc1dced59709c1f43d-2adae831d91020371524",
+          "file": "integration/image-url.spec.ts",
+          "line": 48,
+          "column": 1
+        },
+        {
+          "title": "URL consumers release replaced, hidden, and closed images",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "77bc1dced59709c1f43d-5bcfbc3f8cfc6c53bc5f",
+          "file": "integration/image-url.spec.ts",
+          "line": 8,
+          "column": 1
+        },
+        {
+          "title": "a decode failure releases its URL while the error entry remains visible",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "77bc1dced59709c1f43d-198c8667f6194e0e4bca",
+          "file": "integration/image-url.spec.ts",
+          "line": 48,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "integration/pending-uploads.spec.ts",
+      "file": "integration/pending-uploads.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "upload UI never reports a pending write as saved, and picker can retry the same file",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "3ff96757329dce3a8f14-99e677e617a83bfa5553",
+          "file": "integration/pending-uploads.spec.ts",
+          "line": 4,
+          "column": 1
+        },
+        {
+          "title": "refresh during a suspended batch retains only committed files",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "3ff96757329dce3a8f14-dcf39567a6c0a68ae572",
+          "file": "integration/pending-uploads.spec.ts",
+          "line": 21,
+          "column": 1
+        },
+        {
+          "title": "pending favorites/deletion expose committed state and prevent conflicting mutations",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "3ff96757329dce3a8f14-d657aa76bd05037dfa46",
+          "file": "integration/pending-uploads.spec.ts",
+          "line": 49,
+          "column": 1
+        },
+        {
+          "title": "upload UI never reports a pending write as saved, and picker can retry the same file",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "3ff96757329dce3a8f14-ae05a9c88dcca423e7b6",
+          "file": "integration/pending-uploads.spec.ts",
+          "line": 4,
+          "column": 1
+        },
+        {
+          "title": "refresh during a suspended batch retains only committed files",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "3ff96757329dce3a8f14-4a1413a987db3f9bec46",
+          "file": "integration/pending-uploads.spec.ts",
+          "line": 21,
+          "column": 1
+        },
+        {
+          "title": "pending favorites/deletion expose committed state and prevent conflicting mutations",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "3ff96757329dce3a8f14-494dd86905ca17c8bec1",
+          "file": "integration/pending-uploads.spec.ts",
+          "line": 49,
+          "column": 1
+        },
+        {
+          "title": "upload UI never reports a pending write as saved, and picker can retry the same file",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "3ff96757329dce3a8f14-570012f8488f5421c4ed",
+          "file": "integration/pending-uploads.spec.ts",
+          "line": 4,
+          "column": 1
+        },
+        {
+          "title": "refresh during a suspended batch retains only committed files",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "3ff96757329dce3a8f14-1e0ab809de95f0e30031",
+          "file": "integration/pending-uploads.spec.ts",
+          "line": 21,
+          "column": 1
+        },
+        {
+          "title": "pending favorites/deletion expose committed state and prevent conflicting mutations",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "3ff96757329dce3a8f14-1fcee3452c80b9044e68",
+          "file": "integration/pending-uploads.spec.ts",
+          "line": 49,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "integration/storage-delete.spec.ts",
+      "file": "integration/storage-delete.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "delete rollback and committed removal are atomic and preserve duplicates",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418d28579fad138fab6c-3f811e8c78d28f70d176",
+          "file": "integration/storage-delete.spec.ts",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "delete rollback and committed removal are atomic and preserve duplicates",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418d28579fad138fab6c-b99292ab955f9e0d15ea",
+          "file": "integration/storage-delete.spec.ts",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "delete rollback and committed removal are atomic and preserve duplicates",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418d28579fad138fab6c-f4740c2ebbb5bd64c64f",
+          "file": "integration/storage-delete.spec.ts",
+          "line": 3,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "integration/storage-favorites.spec.ts",
+      "file": "integration/storage-favorites.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "favorite changes persist and aborted changes preserve old state and blob",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "ea02de681a14feaec32a-37e0e9bdc017a9974024",
+          "file": "integration/storage-favorites.spec.ts",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "favorite changes persist and aborted changes preserve old state and blob",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "ea02de681a14feaec32a-f445631cd6f9a0c43906",
+          "file": "integration/storage-favorites.spec.ts",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "favorite changes persist and aborted changes preserve old state and blob",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "ea02de681a14feaec32a-27e34531a3ea5d6a924f",
+          "file": "integration/storage-favorites.spec.ts",
+          "line": 3,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "integration/storage-upload.spec.ts",
+      "file": "integration/storage-upload.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "storage commits metadata/blobs, duplicates and ordering, reopens without loss",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "89d2cc50844bf9139f84-06b05f9bc2569508b94e",
+          "file": "integration/storage-upload.spec.ts",
+          "line": 4,
+          "column": 1
+        },
+        {
+          "title": "request success followed by abort rolls back both stores and rejects",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "89d2cc50844bf9139f84-3b3c43c476d5e6c8238d",
+          "file": "integration/storage-upload.spec.ts",
+          "line": 33,
+          "column": 1
+        },
+        {
+          "title": "denied storage, collection read failure and missing blob reject",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "89d2cc50844bf9139f84-479c0a47f97ece7136e3",
+          "file": "integration/storage-upload.spec.ts",
+          "line": 71,
+          "column": 1
+        },
+        {
+          "title": "quota abort leaves no orphan blob, and versionchange closes the old connection",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "89d2cc50844bf9139f84-e7a18fede111682f8c43",
+          "file": "integration/storage-upload.spec.ts",
+          "line": 112,
+          "column": 1
+        },
+        {
+          "title": "storage commits metadata/blobs, duplicates and ordering, reopens without loss",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "89d2cc50844bf9139f84-37670eea008290f48e06",
+          "file": "integration/storage-upload.spec.ts",
+          "line": 4,
+          "column": 1
+        },
+        {
+          "title": "request success followed by abort rolls back both stores and rejects",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "89d2cc50844bf9139f84-b6855e3692bd90605a34",
+          "file": "integration/storage-upload.spec.ts",
+          "line": 33,
+          "column": 1
+        },
+        {
+          "title": "denied storage, collection read failure and missing blob reject",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "89d2cc50844bf9139f84-6468bdf0402663f5909e",
+          "file": "integration/storage-upload.spec.ts",
+          "line": 71,
+          "column": 1
+        },
+        {
+          "title": "quota abort leaves no orphan blob, and versionchange closes the old connection",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "89d2cc50844bf9139f84-d892365c8d39106c5ccc",
+          "file": "integration/storage-upload.spec.ts",
+          "line": 112,
+          "column": 1
+        },
+        {
+          "title": "storage commits metadata/blobs, duplicates and ordering, reopens without loss",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "89d2cc50844bf9139f84-1dc8fa947c54f6bbf43e",
+          "file": "integration/storage-upload.spec.ts",
+          "line": 4,
+          "column": 1
+        },
+        {
+          "title": "request success followed by abort rolls back both stores and rejects",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "89d2cc50844bf9139f84-ca8dcc496825404dc054",
+          "file": "integration/storage-upload.spec.ts",
+          "line": 33,
+          "column": 1
+        },
+        {
+          "title": "denied storage, collection read failure and missing blob reject",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "89d2cc50844bf9139f84-405766848e6d17438df9",
+          "file": "integration/storage-upload.spec.ts",
+          "line": 71,
+          "column": 1
+        },
+        {
+          "title": "quota abort leaves no orphan blob, and versionchange closes the old connection",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "89d2cc50844bf9139f84-d8916957fa595fc95c3f",
+          "file": "integration/storage-upload.spec.ts",
+          "line": 112,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "integration/theme-states.spec.ts",
+      "file": "integration/theme-states.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "a collection read remains loading until native storage releases it",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "a7ef3bff0855ed91c6f9-5d0769be69f2cf819f37",
+          "file": "integration/theme-states.spec.ts",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "invalid theme follows system and follows later system changes until explicit choice",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "a7ef3bff0855ed91c6f9-436028e572f614264c7b",
+          "file": "integration/theme-states.spec.ts",
+          "line": 30,
+          "column": 1
+        },
+        {
+          "title": "theme read exceptions retain usable system theme and announce the limitation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "a7ef3bff0855ed91c6f9-1eb937870b875455a78e",
+          "file": "integration/theme-states.spec.ts",
+          "line": 45,
+          "column": 1
+        },
+        {
+          "title": "a collection read remains loading until native storage releases it",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "a7ef3bff0855ed91c6f9-532e595fa248d3bf23ab",
+          "file": "integration/theme-states.spec.ts",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "invalid theme follows system and follows later system changes until explicit choice",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "a7ef3bff0855ed91c6f9-57852e4e90ab29093434",
+          "file": "integration/theme-states.spec.ts",
+          "line": 30,
+          "column": 1
+        },
+        {
+          "title": "theme read exceptions retain usable system theme and announce the limitation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "a7ef3bff0855ed91c6f9-3b2571c873da2e291fdb",
+          "file": "integration/theme-states.spec.ts",
+          "line": 45,
+          "column": 1
+        },
+        {
+          "title": "a collection read remains loading until native storage releases it",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "a7ef3bff0855ed91c6f9-ab3d84dcec3899c89518",
+          "file": "integration/theme-states.spec.ts",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "invalid theme follows system and follows later system changes until explicit choice",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "a7ef3bff0855ed91c6f9-53879297bb0ab94b457a",
+          "file": "integration/theme-states.spec.ts",
+          "line": 30,
+          "column": 1
+        },
+        {
+          "title": "theme read exceptions retain usable system theme and announce the limitation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "a7ef3bff0855ed91c6f9-4270305e16c9c737c025",
+          "file": "integration/theme-states.spec.ts",
+          "line": 45,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-25T04:26:46.451Z",
+    "duration": 265.69199999999995,
+    "expected": 0,
+    "skipped": 144,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

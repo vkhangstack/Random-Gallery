@@ -1,0 +1,62 @@
+{"Time":"2026-10-25T16:56:54.277285+07:00","Action":"start","Package":"randomgallery/server/cmd/api"}
+{"Time":"2026-10-25T16:56:54.277611+07:00","Action":"output","Package":"randomgallery/server/cmd/api","Output":"?   \trandomgallery/server/cmd/api\t[no test files]\n"}
+{"Time":"2026-10-25T16:56:54.27764+07:00","Action":"skip","Package":"randomgallery/server/cmd/api","Elapsed":0.001}
+{"Time":"2026-10-25T16:56:54.701838+07:00","Action":"start","Package":"randomgallery/server/internal/adapters/httpapi"}
+{"Time":"2026-10-25T16:56:54.702378+07:00","Action":"start","Package":"randomgallery/server/internal/adapters/imagevalidation"}
+{"Time":"2026-10-25T16:56:54.702468+07:00","Action":"run","Package":"randomgallery/server/internal/adapters/imagevalidation","Test":"TestSupportedAndCorruptImages"}
+{"Time":"2026-10-25T16:56:54.70249+07:00","Action":"output","Package":"randomgallery/server/internal/adapters/imagevalidation","Test":"TestSupportedAndCorruptImages","Output":"=== RUN   TestSupportedAndCorruptImages\n"}
+{"Time":"2026-10-25T16:56:54.702521+07:00","Action":"output","Package":"randomgallery/server/internal/adapters/imagevalidation","Test":"TestSupportedAndCorruptImages","Output":"--- PASS: TestSupportedAndCorruptImages (0.00s)\n"}
+{"Time":"2026-10-25T16:56:54.702541+07:00","Action":"pass","Package":"randomgallery/server/internal/adapters/imagevalidation","Test":"TestSupportedAndCorruptImages","Elapsed":0}
+{"Time":"2026-10-25T16:56:54.702562+07:00","Action":"output","Package":"randomgallery/server/internal/adapters/imagevalidation","Output":"PASS\n"}
+{"Time":"2026-10-25T16:56:54.70258+07:00","Action":"output","Package":"randomgallery/server/internal/adapters/imagevalidation","Output":"ok  \trandomgallery/server/internal/adapters/imagevalidation\t(cached)\n"}
+{"Time":"2026-10-25T16:56:54.702599+07:00","Action":"pass","Package":"randomgallery/server/internal/adapters/imagevalidation","Elapsed":0}
+{"Time":"2026-10-25T16:56:54.703165+07:00","Action":"start","Package":"randomgallery/server/internal/adapters/password"}
+{"Time":"2026-10-25T16:56:54.705667+07:00","Action":"run","Package":"randomgallery/server/internal/adapters/password","Test":"TestPasswordVerificationAndAdmission"}
+{"Time":"2026-10-25T16:56:54.705764+07:00","Action":"output","Package":"randomgallery/server/internal/adapters/password","Test":"TestPasswordVerificationAndAdmission","Output":"=== RUN   TestPasswordVerificationAndAdmission\n"}
+{"Time":"2026-10-25T16:56:54.70579+07:00","Action":"output","Package":"randomgallery/server/internal/adapters/password","Test":"TestPasswordVerificationAndAdmission","Output":"--- PASS: TestPasswordVerificationAndAdmission (0.67s)\n"}
+{"Time":"2026-10-25T16:56:54.705796+07:00","Action":"pass","Package":"randomgallery/server/internal/adapters/password","Test":"TestPasswordVerificationAndAdmission","Elapsed":0.67}
+{"Time":"2026-10-25T16:56:54.705807+07:00","Action":"output","Package":"randomgallery/server/internal/adapters/password","Output":"PASS\n"}
+{"Time":"2026-10-25T16:56:54.705814+07:00","Action":"output","Package":"randomgallery/server/internal/adapters/password","Output":"ok  \trandomgallery/server/internal/adapters/password\t(cached)\n"}
+{"Time":"2026-10-25T16:56:54.705831+07:00","Action":"pass","Package":"randomgallery/server/internal/adapters/password","Elapsed":0.003}
+{"Time":"2026-10-25T16:56:54.706231+07:00","Action":"start","Package":"randomgallery/server/internal/adapters/sqlite"}
+{"Time":"2026-10-25T16:56:54.706627+07:00","Action":"start","Package":"randomgallery/server/internal/application"}
+{"Time":"2026-10-25T16:56:54.707434+07:00","Action":"start","Package":"randomgallery/server/internal/architecture"}
+{"Time":"2026-10-25T16:56:54.707521+07:00","Action":"run","Package":"randomgallery/server/internal/architecture","Test":"TestDependenciesPointInward"}
+{"Time":"2026-10-25T16:56:54.707572+07:00","Action":"output","Package":"randomgallery/server/internal/architecture","Test":"TestDependenciesPointInward","Output":"=== RUN   TestDependenciesPointInward\n"}
+{"Time":"2026-10-25T16:56:54.707603+07:00","Action":"output","Package":"randomgallery/server/internal/architecture","Test":"TestDependenciesPointInward","Output":"--- PASS: TestDependenciesPointInward (0.12s)\n"}
+{"Time":"2026-10-25T16:56:54.707694+07:00","Action":"pass","Package":"randomgallery/server/internal/architecture","Test":"TestDependenciesPointInward","Elapsed":0.12}
+{"Time":"2026-10-25T16:56:54.707717+07:00","Action":"output","Package":"randomgallery/server/internal/architecture","Output":"PASS\n"}
+{"Time":"2026-10-25T16:56:54.707731+07:00","Action":"output","Package":"randomgallery/server/internal/architecture","Output":"ok  \trandomgallery/server/internal/architecture\t(cached)\n"}
+{"Time":"2026-10-25T16:56:54.707754+07:00","Action":"pass","Package":"randomgallery/server/internal/architecture","Elapsed":0}
+{"Time":"2026-10-25T16:56:54.708277+07:00","Action":"start","Package":"randomgallery/server/internal/domain"}
+{"Time":"2026-10-25T16:56:54.708349+07:00","Action":"output","Package":"randomgallery/server/internal/domain","Output":"?   \trandomgallery/server/internal/domain\t[no test files]\n"}
+{"Time":"2026-10-25T16:56:54.708614+07:00","Action":"skip","Package":"randomgallery/server/internal/domain","Elapsed":0}
+{"Time":"2026-10-25T16:56:54.710911+07:00","Action":"run","Package":"randomgallery/server/internal/adapters/sqlite","Test":"TestRollbackReopenAndOwnership"}
+{"Time":"2026-10-25T16:56:54.710996+07:00","Action":"output","Package":"randomgallery/server/internal/adapters/sqlite","Test":"TestRollbackReopenAndOwnership","Output":"=== RUN   TestRollbackReopenAndOwnership\n"}
+{"Time":"2026-10-25T16:56:54.711018+07:00","Action":"output","Package":"randomgallery/server/internal/adapters/sqlite","Test":"TestRollbackReopenAndOwnership","Output":"--- PASS: TestRollbackReopenAndOwnership (0.01s)\n"}
+{"Time":"2026-10-25T16:56:54.711024+07:00","Action":"pass","Package":"randomgallery/server/internal/adapters/sqlite","Test":"TestRollbackReopenAndOwnership","Elapsed":0.01}
+{"Time":"2026-10-25T16:56:54.71103+07:00","Action":"output","Package":"randomgallery/server/internal/adapters/sqlite","Output":"PASS\n"}
+{"Time":"2026-10-25T16:56:54.711038+07:00","Action":"output","Package":"randomgallery/server/internal/adapters/sqlite","Output":"ok  \trandomgallery/server/internal/adapters/sqlite\t(cached)\n"}
+{"Time":"2026-10-25T16:56:54.711051+07:00","Action":"pass","Package":"randomgallery/server/internal/adapters/sqlite","Elapsed":0.005}
+{"Time":"2026-10-25T16:56:55.481368+07:00","Action":"run","Package":"randomgallery/server/internal/adapters/httpapi","Test":"TestAuthHTTPContract"}
+{"Time":"2026-10-25T16:56:55.481483+07:00","Action":"output","Package":"randomgallery/server/internal/adapters/httpapi","Test":"TestAuthHTTPContract","Output":"=== RUN   TestAuthHTTPContract\n"}
+{"Time":"2026-10-25T16:56:56.015032+07:00","Action":"output","Package":"randomgallery/server/internal/adapters/httpapi","Test":"TestAuthHTTPContract","Output":"--- PASS: TestAuthHTTPContract (0.53s)\n"}
+{"Time":"2026-10-25T16:56:56.015112+07:00","Action":"pass","Package":"randomgallery/server/internal/adapters/httpapi","Test":"TestAuthHTTPContract","Elapsed":0.53}
+{"Time":"2026-10-25T16:56:56.015124+07:00","Action":"run","Package":"randomgallery/server/internal/adapters/httpapi","Test":"TestSecureCookieAndLookupFailure"}
+{"Time":"2026-10-25T16:56:56.01513+07:00","Action":"output","Package":"randomgallery/server/internal/adapters/httpapi","Test":"TestSecureCookieAndLookupFailure","Output":"=== RUN   TestSecureCookieAndLookupFailure\n"}
+{"Time":"2026-10-25T16:56:56.184244+07:00","Action":"output","Package":"randomgallery/server/internal/adapters/httpapi","Test":"TestSecureCookieAndLookupFailure","Output":"--- PASS: TestSecureCookieAndLookupFailure (0.17s)\n"}
+{"Time":"2026-10-25T16:56:56.184276+07:00","Action":"pass","Package":"randomgallery/server/internal/adapters/httpapi","Test":"TestSecureCookieAndLookupFailure","Elapsed":0.17}
+{"Time":"2026-10-25T16:56:56.184284+07:00","Action":"run","Package":"randomgallery/server/internal/adapters/httpapi","Test":"TestPrivateUploadListContentAndValidation"}
+{"Time":"2026-10-25T16:56:56.18429+07:00","Action":"output","Package":"randomgallery/server/internal/adapters/httpapi","Test":"TestPrivateUploadListContentAndValidation","Output":"=== RUN   TestPrivateUploadListContentAndValidation\n"}
+{"Time":"2026-10-25T16:56:56.456027+07:00","Action":"run","Package":"randomgallery/server/internal/application","Test":"TestAuthUseCasesThroughPorts"}
+{"Time":"2026-10-25T16:56:56.456068+07:00","Action":"output","Package":"randomgallery/server/internal/application","Test":"TestAuthUseCasesThroughPorts","Output":"=== RUN   TestAuthUseCasesThroughPorts\n"}
+{"Time":"2026-10-25T16:56:56.456082+07:00","Action":"output","Package":"randomgallery/server/internal/application","Test":"TestAuthUseCasesThroughPorts","Output":"--- PASS: TestAuthUseCasesThroughPorts (0.00s)\n"}
+{"Time":"2026-10-25T16:56:56.456089+07:00","Action":"pass","Package":"randomgallery/server/internal/application","Test":"TestAuthUseCasesThroughPorts","Elapsed":0}
+{"Time":"2026-10-25T16:56:56.456094+07:00","Action":"output","Package":"randomgallery/server/internal/application","Output":"PASS\n"}
+{"Time":"2026-10-25T16:56:56.456431+07:00","Action":"output","Package":"randomgallery/server/internal/application","Output":"ok  \trandomgallery/server/internal/application\t1.748s\n"}
+{"Time":"2026-10-25T16:56:56.45715+07:00","Action":"pass","Package":"randomgallery/server/internal/application","Elapsed":1.751}
+{"Time":"2026-10-25T16:56:56.533774+07:00","Action":"output","Package":"randomgallery/server/internal/adapters/httpapi","Test":"TestPrivateUploadListContentAndValidation","Output":"--- PASS: TestPrivateUploadListContentAndValidation (0.35s)\n"}
+{"Time":"2026-10-25T16:56:56.533801+07:00","Action":"pass","Package":"randomgallery/server/internal/adapters/httpapi","Test":"TestPrivateUploadListContentAndValidation","Elapsed":0.35}
+{"Time":"2026-10-25T16:56:56.533809+07:00","Action":"output","Package":"randomgallery/server/internal/adapters/httpapi","Output":"PASS\n"}
+{"Time":"2026-10-25T16:56:56.53593+07:00","Action":"output","Package":"randomgallery/server/internal/adapters/httpapi","Output":"ok  \trandomgallery/server/internal/adapters/httpapi\t1.833s\n"}
+{"Time":"2026-10-25T16:56:56.53725+07:00","Action":"pass","Package":"randomgallery/server/internal/adapters/httpapi","Elapsed":1.8359999999999999}

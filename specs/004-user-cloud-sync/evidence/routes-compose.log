@@ -1,0 +1,147 @@
+ Image my-project-sdd-api Building 
+ Image my-project-sdd-web Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 1.03kB done
+#1 DONE 0.0s
+
+#2 [web internal] load build definition from Dockerfile
+#2 transferring dockerfile: 425B done
+#2 DONE 0.0s
+
+#3 [api internal] load build definition from Dockerfile
+#3 transferring dockerfile: 632B done
+#3 DONE 0.0s
+
+#4 [api internal] load metadata for docker.io/library/golang:1.26-alpine
+#4 ...
+
+#5 [web internal] load metadata for docker.io/library/nginx:stable-alpine
+#5 DONE 1.8s
+
+#6 [api internal] load metadata for docker.io/library/alpine:3.23
+#6 DONE 1.8s
+
+#4 [api internal] load metadata for docker.io/library/golang:1.26-alpine
+#4 DONE 1.8s
+
+#7 [web internal] load metadata for docker.io/library/node:24-alpine
+#7 DONE 1.8s
+
+#8 [api internal] load .dockerignore
+#8 transferring context: 257B done
+#8 DONE 0.0s
+
+#9 [api build 1/6] FROM docker.io/library/golang:1.26-alpine@sha256:27f2d3b83cfc5803c8078f8e730af0f7c431bf067afaec8f60a36fb763187cba
+#9 resolve docker.io/library/golang:1.26-alpine@sha256:27f2d3b83cfc5803c8078f8e730af0f7c431bf067afaec8f60a36fb763187cba 0.0s done
+#9 DONE 0.0s
+
+#10 [api stage-1 1/3] FROM docker.io/library/alpine:3.23@sha256:ff7f0c727dd796aa36787bfcd9a64bf35a6ce72a73451b3359fde849b6703d63
+#10 resolve docker.io/library/alpine:3.23@sha256:ff7f0c727dd796aa36787bfcd9a64bf35a6ce72a73451b3359fde849b6703d63 0.0s done
+#10 DONE 0.0s
+
+#11 [web stage-1 1/3] FROM docker.io/library/nginx:stable-alpine@sha256:47928bf67eb62a1863cb08d9ecb52d3e704304ba614eaee17884204677702951
+#11 resolve docker.io/library/nginx:stable-alpine@sha256:47928bf67eb62a1863cb08d9ecb52d3e704304ba614eaee17884204677702951 0.0s done
+#11 DONE 0.0s
+
+#12 [web build 1/6] FROM docker.io/library/node:24-alpine@sha256:06d7adf3e0ef61a13f1d28682726366f97a15aa1888c934d3ecec86c33918b53
+#12 resolve docker.io/library/node:24-alpine@sha256:06d7adf3e0ef61a13f1d28682726366f97a15aa1888c934d3ecec86c33918b53 0.0s done
+#12 DONE 0.0s
+
+#13 [api internal] load build context
+#13 transferring context: 2.04kB done
+#13 DONE 0.0s
+
+#14 [api build 4/6] RUN go mod download
+#14 CACHED
+
+#15 [api build 3/6] COPY server/go.mod server/go.sum ./
+#15 CACHED
+
+#16 [api build 6/6] RUN CGO_ENABLED=0 go build -trimpath -ldflags="-s -w" -o /gallery-api ./cmd/api
+#16 CACHED
+
+#17 [api build 5/6] COPY server/ ./
+#17 CACHED
+
+#18 [api stage-1 2/3] RUN addgroup -S gallery && adduser -S -G gallery gallery && mkdir /data && chown gallery:gallery /data
+#18 CACHED
+
+#19 [api build 2/6] WORKDIR /src
+#19 CACHED
+
+#20 [api stage-1 3/3] COPY --from=build /gallery-api /usr/local/bin/gallery-api
+#20 CACHED
+
+#21 [web internal] load build context
+#21 transferring context: 35.93kB done
+#21 DONE 0.0s
+
+#22 [web build 3/6] COPY package.json package-lock.json ./
+#22 CACHED
+
+#23 [web build 2/6] WORKDIR /app
+#23 CACHED
+
+#24 [web build 4/6] RUN npm ci
+#24 CACHED
+
+#25 [api] exporting to image
+#25 exporting layers done
+#25 exporting manifest sha256:ec1caadd606fec8175e54ce5ce580ee63348f7176aecd4cefec2cc38b2c6c233 done
+#25 exporting config sha256:c0fb108cd4e7d8dfd75cc6f64a7c1cdd08c8265490ad95db5ad99a907b227f0e done
+#25 exporting attestation manifest sha256:aec4f55c75397e801c82b417f90687956436bf5103b78383646f474f8016f317 done
+#25 exporting manifest list sha256:2d465348e947eb20532e4c2ca922234226dcab1e4cd8932ef3d640922ebe88d2 done
+#25 naming to docker.io/library/my-project-sdd-api:latest done
+#25 unpacking to docker.io/library/my-project-sdd-api:latest done
+#25 DONE 0.0s
+
+#26 [web build 5/6] COPY . .
+#26 DONE 0.1s
+
+#27 [api] resolving provenance for metadata file
+#27 DONE 0.0s
+
+#28 [web build 6/6] RUN npm run build
+#28 0.291 
+#28 0.291 > random-gallery@1.0.0 build
+#28 0.291 > tsc --noEmit && vite build
+#28 0.291 
+#28 3.086 vite v8.1.3 building client environment for production...
+#28 3.096 [2Ktransforming...✓ 30 modules transformed.
+#28 3.276 rendering chunks...
+#28 3.324 computing gzip size...
+#28 3.329 dist/index.html                   0.59 kB │ gzip:  0.36 kB
+#28 3.329 dist/assets/index-ookMvEzs.css   18.03 kB │ gzip:  4.88 kB
+#28 3.329 dist/assets/index-CmutuJNP.js   247.12 kB │ gzip: 76.99 kB
+#28 3.329 
+#28 3.329 ✓ built in 242ms
+#28 DONE 3.4s
+
+#29 [web stage-1 2/3] COPY nginx.conf /etc/nginx/conf.d/default.conf
+#29 CACHED
+
+#30 [web stage-1 3/3] COPY --from=build /app/dist /usr/share/nginx/html
+#30 DONE 0.0s
+
+#31 [web] exporting to image
+#31 exporting layers 0.0s done
+#31 exporting manifest sha256:ad7aad3dfce7c6056b795b6cb905d4fec3954c5df6dede34f28f0a55d0c2d310 done
+#31 exporting config sha256:1ca49e240c6b8d719fe29215b70d3decc46da9f3b5160b3246c9690c4421495e done
+#31 exporting attestation manifest sha256:a427c8fd566b8cf9cca84254f8735d60820edef587ec36c1c7d61732a51b0410 done
+#31 exporting manifest list sha256:4750466d03e432b039e48cd1ee21da288bda88a87be33b305fc9d838a070ad31 0.1s done
+#31 naming to docker.io/library/my-project-sdd-web:latest
+#31 naming to docker.io/library/my-project-sdd-web:latest 0.0s done
+#31 unpacking to docker.io/library/my-project-sdd-web:latest 0.0s done
+#31 DONE 0.1s
+
+#32 [web] resolving provenance for metadata file
+#32 DONE 0.0s
+ Image my-project-sdd-api Built 
+ Image my-project-sdd-web Built 
+ Container my-project-sdd-api-1 Running 
+ Container my-project-sdd-web-1 Recreate 
+ Container my-project-sdd-web-1 Recreated 
+ Container my-project-sdd-api-1 Waiting 
+ Container my-project-sdd-api-1 Healthy 
+ Container my-project-sdd-web-1 Starting 
+ Container my-project-sdd-web-1 Started 

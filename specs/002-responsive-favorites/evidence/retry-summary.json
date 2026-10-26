@@ -1,0 +1,90 @@
+{
+  "commandExitCode": 1,
+  "stats": {
+    "startTime": "2026-10-25T06:10:45.771Z",
+    "duration": 16000.976999999999,
+    "expected": 27,
+    "skipped": 0,
+    "unexpected": 60,
+    "flaky": 0
+  },
+  "chromium": {
+    "passed": 27,
+    "assertionFailures": 2
+  },
+  "firefox": {
+    "launchFailures": 29,
+    "testBodiesNotRun": 29
+  },
+  "webkit": {
+    "launchFailures": 29,
+    "testBodiesNotRun": 29
+  },
+  "skipped": 0,
+  "failures": [
+    {
+      "title": "complete primary keyboard journey in light theme",
+      "file": "e2e/accessibility-responsive.spec.ts",
+      "line": 49,
+      "results": [
+        {
+          "status": "failed",
+          "error": {
+            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
+            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at /Users/vkhangstack/Documents/Coding/my-project-sdd/tests/e2e/accessibility-responsive.spec.ts:101:9",
+            "location": {
+              "file": "/Users/vkhangstack/Documents/Coding/my-project-sdd/tests/e2e/accessibility-responsive.spec.ts",
+              "column": 9,
+              "line": 101
+            },
+            "snippet": "   99 |           element.contains(document.activeElement),\n  100 |         ),\n> 101 |       ).toBe(true);\n      |         ^\n  102 |     }\n  103 |     await preview.getByRole(\"button\", { name: \"Delete\", exact: true }).focus();\n  104 |     await page.keyboard.press(\"Enter\");"
+          },
+          "attachments": [
+            {
+              "name": "error-context",
+              "contentType": "text/markdown",
+              "path": "/Users/vkhangstack/Documents/Coding/my-project-sdd/test-results/e2e-accessibility-responsi-6d35b-oard-journey-in-light-theme-chromium/error-context.md"
+            },
+            {
+              "name": "trace",
+              "contentType": "application/zip",
+              "path": "/Users/vkhangstack/Documents/Coding/my-project-sdd/test-results/e2e-accessibility-responsi-6d35b-oard-journey-in-light-theme-chromium/trace.zip"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "complete primary keyboard journey in dark theme",
+      "file": "e2e/accessibility-responsive.spec.ts",
+      "line": 49,
+      "results": [
+        {
+          "status": "failed",
+          "error": {
+            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
+            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at /Users/vkhangstack/Documents/Coding/my-project-sdd/tests/e2e/accessibility-responsive.spec.ts:101:9",
+            "location": {
+              "file": "/Users/vkhangstack/Documents/Coding/my-project-sdd/tests/e2e/accessibility-responsive.spec.ts",
+              "column": 9,
+              "line": 101
+            },
+            "snippet": "   99 |           element.contains(document.activeElement),\n  100 |         ),\n> 101 |       ).toBe(true);\n      |         ^\n  102 |     }\n  103 |     await preview.getByRole(\"button\", { name: \"Delete\", exact: true }).focus();\n  104 |     await page.keyboard.press(\"Enter\");"
+          },
+          "attachments": [
+            {
+              "name": "error-context",
+              "contentType": "text/markdown",
+              "path": "/Users/vkhangstack/Documents/Coding/my-project-sdd/test-results/e2e-accessibility-responsi-9603e-board-journey-in-dark-theme-chromium/error-context.md"
+            },
+            {
+              "name": "trace",
+              "contentType": "application/zip",
+              "path": "/Users/vkhangstack/Documents/Coding/my-project-sdd/test-results/e2e-accessibility-responsi-9603e-board-journey-in-dark-theme-chromium/trace.zip"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

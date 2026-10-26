@@ -1,0 +1,36 @@
+{
+  "node": "v24.16.0",
+  "playwright": "1.63.0",
+  "typecheck": {
+    "exit_code": 0
+  },
+  "unit": {
+    "exit_code": 0,
+    "passed": 19,
+    "failed": 0,
+    "skipped": 0
+  },
+  "build": {
+    "exit_code": 0
+  },
+  "targeted_browser": {
+    "exit_code": 1,
+    "discovered": 87,
+    "passed": 0,
+    "failed_assertions": 0,
+    "skipped": 0,
+    "not_run": 87,
+    "infrastructure_errors": 1
+  },
+  "preview": {
+    "exit_code": 1,
+    "error": "listen EPERM: operation not permitted 127.0.0.1:4173"
+  },
+  "browser_binaries": {
+    "chromium": true,
+    "firefox": false,
+    "webkit": false
+  },
+  "pre_change_seeded_profile": "not created; app server could not start",
+  "hooks": "no .specify/extensions.yml; no before/after hooks registered"
+}

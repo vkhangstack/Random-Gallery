@@ -1,0 +1,184 @@
+{
+  "config": {
+    "argv": [
+      "/Users/vkhangstack/.nvm/versions/node/v24.16.0/bin/node",
+      "/Users/vkhangstack/Documents/Coding/my-project-sdd/node_modules/playwright/cli.js",
+      "test",
+      "--config=playwright.accounts.config.ts",
+      "--project=chromium",
+      "--reporter=json",
+      "--grep",
+      "returning from the file picker"
+    ],
+    "configFile": "/Users/vkhangstack/Documents/Coding/my-project-sdd/playwright.accounts.config.ts",
+    "rootDir": "/Users/vkhangstack/Documents/Coding/my-project-sdd/tests/account",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/vkhangstack/Documents/Coding/my-project-sdd/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/vkhangstack/Documents/Coding/my-project-sdd/tests/account",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "/Users/vkhangstack/Documents/Coding/my-project-sdd/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/Users/vkhangstack/Documents/Coding/my-project-sdd/tests/account",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "/Users/vkhangstack/Documents/Coding/my-project-sdd/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/Users/vkhangstack/Documents/Coding/my-project-sdd/tests/account",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "file-picker-upload.spec.ts",
+      "file": "file-picker-upload.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "returning from the file picker preserves a signed-in upload and never writes IndexedDB",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 10818,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('1 saved · 0 failed')\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByText('1 saved · 0 failed') with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByText('1 saved · 0 failed')\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('1 saved · 0 failed')\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByText('1 saved · 0 failed') with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByText('1 saved · 0 failed')\u001b[22m\n\n    at /Users/vkhangstack/Documents/Coding/my-project-sdd/tests/account/file-picker-upload.spec.ts:26:54",
+                    "location": {
+                      "file": "/Users/vkhangstack/Documents/Coding/my-project-sdd/tests/account/file-picker-upload.spec.ts",
+                      "column": 54,
+                      "line": 26
+                    },
+                    "snippet": "  24 |   await expect(page.getByText(`Signed in as ${address}`)).toBeVisible();\n  25 |   await page.evaluate(() => (window as any).releasePickerValidation());\n> 26 |   await expect(page.getByText(\"1 saved · 0 failed\")).toBeVisible();\n     |                                                      ^\n  27 |   expect(posts).toBe(1);\n  28 |   await expect(page.locator(\".viewer h2\")).toHaveText(\"landscape.png\");\n  29 |   const databaseNames = await page.evaluate(async () => (await indexedDB.databases()).map(database => database.name));"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/vkhangstack/Documents/Coding/my-project-sdd/tests/account/file-picker-upload.spec.ts",
+                        "column": 54,
+                        "line": 26
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('1 saved · 0 failed')\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByText('1 saved · 0 failed') with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByText('1 saved · 0 failed')\u001b[22m\n\n\n  24 |   await expect(page.getByText(`Signed in as ${address}`)).toBeVisible();\n  25 |   await page.evaluate(() => (window as any).releasePickerValidation());\n> 26 |   await expect(page.getByText(\"1 saved · 0 failed\")).toBeVisible();\n     |                                                      ^\n  27 |   expect(posts).toBe(1);\n  28 |   await expect(page.locator(\".viewer h2\")).toHaveText(\"landscape.png\");\n  29 |   const databaseNames = await page.evaluate(async () => (await indexedDB.databases()).map(database => database.name));\n    at /Users/vkhangstack/Documents/Coding/my-project-sdd/tests/account/file-picker-upload.spec.ts:26:54"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-25T17:22:00.151Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/vkhangstack/Documents/Coding/my-project-sdd/test-results/file-picker-upload-returni-47bd7--and-never-writes-IndexedDB-chromium/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/vkhangstack/Documents/Coding/my-project-sdd/test-results/file-picker-upload-returni-47bd7--and-never-writes-IndexedDB-chromium/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/vkhangstack/Documents/Coding/my-project-sdd/tests/account/file-picker-upload.spec.ts",
+                    "column": 54,
+                    "line": 26
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "4dd33b80430a20097951-955d54783731debe694f",
+          "file": "file-picker-upload.spec.ts",
+          "line": 4,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-25T17:21:59.851Z",
+    "duration": 11413.73,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

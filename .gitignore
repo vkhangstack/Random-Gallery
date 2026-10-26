@@ -1,0 +1,29 @@
+node_modules/
+dist/
+build/
+coverage/
+playwright-report/
+test-results/
+*.log
+.env*
+.DS_Store
+Thumbs.db
+*.tmp
+*.swp
+.vscode/
+.idea/
+
+# Retain the requested verification evidence.
+!specs/001-random-gallery/evidence/*.log
+
+# Private backend database and image content.
+data/
+
+# Go build artifacts
+*.exe
+*.test
+vendor/
+*.out
+
+**/*.sqlite*
+!specs/004-user-cloud-sync/evidence/*.log

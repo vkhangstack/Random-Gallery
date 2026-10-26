@@ -1,0 +1,35 @@
+node_modules
+dist
+build
+coverage
+test-results
+playwright-report
+.git
+.github
+.agents
+.specify
+.codex
+.aws
+.env*
+*.pem
+*.key
+*.log
+.DS_Store
+.vscode
+.idea
+specs
+
+data
+
+# Go build artifacts
+*.exe
+*.test
+vendor/
+*.out
+
+# Never send host API data or nested credentials to Docker builds.
+server/data/
+**/*.sqlite*
+**/.env*
+**/*.key
+**/*.pem

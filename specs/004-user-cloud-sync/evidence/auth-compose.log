@@ -1,0 +1,162 @@
+ Image my-project-sdd-api Building 
+ Image my-project-sdd-web Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 1.03kB done
+#1 DONE 0.0s
+
+#2 [api internal] load build definition from Dockerfile
+#2 transferring dockerfile: 632B done
+#2 DONE 0.0s
+
+#3 [web internal] load build definition from Dockerfile
+#3 transferring dockerfile: 425B done
+#3 DONE 0.0s
+
+#4 [api internal] load metadata for docker.io/library/golang:1.26-alpine
+#4 ...
+
+#5 [api internal] load metadata for docker.io/library/alpine:3.23
+#5 DONE 1.5s
+
+#6 [web internal] load metadata for docker.io/library/node:24-alpine
+#6 DONE 1.6s
+
+#7 [web internal] load metadata for docker.io/library/nginx:stable-alpine
+#7 DONE 1.6s
+
+#4 [api internal] load metadata for docker.io/library/golang:1.26-alpine
+#4 DONE 1.6s
+
+#8 [web internal] load .dockerignore
+#8 transferring context: 257B done
+#8 DONE 0.0s
+
+#9 [web stage-1 1/3] FROM docker.io/library/nginx:stable-alpine@sha256:47928bf67eb62a1863cb08d9ecb52d3e704304ba614eaee17884204677702951
+#9 resolve docker.io/library/nginx:stable-alpine@sha256:47928bf67eb62a1863cb08d9ecb52d3e704304ba614eaee17884204677702951 0.0s done
+#9 DONE 0.0s
+
+#10 [api build 1/6] FROM docker.io/library/golang:1.26-alpine@sha256:27f2d3b83cfc5803c8078f8e730af0f7c431bf067afaec8f60a36fb763187cba
+#10 resolve docker.io/library/golang:1.26-alpine@sha256:27f2d3b83cfc5803c8078f8e730af0f7c431bf067afaec8f60a36fb763187cba 0.0s done
+#10 DONE 0.0s
+
+#11 [api stage-1 1/3] FROM docker.io/library/alpine:3.23@sha256:ff7f0c727dd796aa36787bfcd9a64bf35a6ce72a73451b3359fde849b6703d63
+#11 resolve docker.io/library/alpine:3.23@sha256:ff7f0c727dd796aa36787bfcd9a64bf35a6ce72a73451b3359fde849b6703d63 0.0s done
+#11 DONE 0.0s
+
+#12 [web build 1/6] FROM docker.io/library/node:24-alpine@sha256:06d7adf3e0ef61a13f1d28682726366f97a15aa1888c934d3ecec86c33918b53
+#12 resolve docker.io/library/node:24-alpine@sha256:06d7adf3e0ef61a13f1d28682726366f97a15aa1888c934d3ecec86c33918b53 0.0s done
+#12 DONE 0.0s
+
+#13 [api internal] load build context
+#13 transferring context: 16.75kB 0.0s done
+#13 DONE 0.0s
+
+#14 [web internal] load build context
+#14 transferring context: 30.77kB 0.0s done
+#14 DONE 0.0s
+
+#15 [api build 2/6] WORKDIR /src
+#15 CACHED
+
+#16 [api build 3/6] COPY server/go.mod server/go.sum ./
+#16 CACHED
+
+#17 [api build 4/6] RUN go mod download
+#17 CACHED
+
+#18 [web build 3/6] COPY package.json package-lock.json ./
+#18 CACHED
+
+#19 [web build 2/6] WORKDIR /app
+#19 CACHED
+
+#20 [web build 4/6] RUN npm ci
+#20 CACHED
+
+#21 [api build 5/6] COPY server/ ./
+#21 DONE 0.0s
+
+#22 [web build 5/6] COPY . .
+#22 DONE 0.1s
+
+#23 [web build 6/6] RUN npm run build
+#23 0.692 
+#23 0.692 > random-gallery@1.0.0 build
+#23 0.692 > tsc --noEmit && vite build
+#23 0.692 
+#23 7.775 vite v8.1.3 building client environment for production...
+#23 7.804 [2Ktransforming...✓ 29 modules transformed.
+#23 8.126 rendering chunks...
+#23 8.215 computing gzip size...
+#23 8.224 dist/index.html                   0.59 kB │ gzip:  0.35 kB
+#23 8.224 dist/assets/index-BQ-k6Uwh.css   17.79 kB │ gzip:  4.82 kB
+#23 8.224 dist/assets/index-BBdZQ23p.js   246.10 kB │ gzip: 76.74 kB
+#23 8.224 
+#23 8.226 ✓ built in 449ms
+#23 DONE 8.6s
+
+#24 [api build 6/6] RUN CGO_ENABLED=0 go build -trimpath -ldflags="-s -w" -o /gallery-api ./cmd/api
+#24 ...
+
+#25 [web stage-1 2/3] COPY nginx.conf /etc/nginx/conf.d/default.conf
+#25 CACHED
+
+#26 [web stage-1 3/3] COPY --from=build /app/dist /usr/share/nginx/html
+#26 DONE 0.2s
+
+#24 [api build 6/6] RUN CGO_ENABLED=0 go build -trimpath -ldflags="-s -w" -o /gallery-api ./cmd/api
+#24 ...
+
+#27 [web] exporting to image
+#27 exporting layers
+#27 exporting layers 0.3s done
+#27 exporting manifest sha256:09fccfffe54a613e70a91f1975b9f4a4242377f782dfff7dbc0d87784e2ba989 0.0s done
+#27 exporting config sha256:341ab0039d53ef9904df053b6876c7b6a5298e6ff7c2bf51b2c726595cf23d70 0.1s done
+#27 exporting attestation manifest sha256:bca1270fd6dab854f4d3ca6e334475afd44f38e97949d9fc48e587b24294c3e1 0.1s done
+#27 exporting manifest list sha256:e3b1b1fec510f11b8df5aaf6e9b77b7694276cddc666f5b19398225024c2f580
+#27 exporting manifest list sha256:e3b1b1fec510f11b8df5aaf6e9b77b7694276cddc666f5b19398225024c2f580 0.1s done
+#27 naming to docker.io/library/my-project-sdd-web:latest
+#27 naming to docker.io/library/my-project-sdd-web:latest 0.0s done
+#27 unpacking to docker.io/library/my-project-sdd-web:latest 0.1s done
+#27 DONE 0.9s
+
+#24 [api build 6/6] RUN CGO_ENABLED=0 go build -trimpath -ldflags="-s -w" -o /gallery-api ./cmd/api
+#24 ...
+
+#28 [web] resolving provenance for metadata file
+#28 DONE 0.1s
+
+#24 [api build 6/6] RUN CGO_ENABLED=0 go build -trimpath -ldflags="-s -w" -o /gallery-api ./cmd/api
+#24 DONE 23.6s
+
+#29 [api stage-1 2/3] RUN addgroup -S gallery && adduser -S -G gallery gallery && mkdir /data && chown gallery:gallery /data
+#29 CACHED
+
+#30 [api stage-1 3/3] COPY --from=build /gallery-api /usr/local/bin/gallery-api
+#30 DONE 0.0s
+
+#31 [api] exporting to image
+#31 exporting layers
+#31 exporting layers 0.4s done
+#31 exporting manifest sha256:c691e6deb0bb135156ec5cd842f328039b7cff4180d910c57e98458d9868b71c done
+#31 exporting config sha256:52f2fd2cc4584ed933bf34524ebe0ed66ae3b12f19ca0168361f56f10b06f83c done
+#31 exporting attestation manifest sha256:2c1310b5502427089b5466892407334521cae3a72e1e63bffab08f5f1ddf7bc7 done
+#31 exporting manifest list sha256:fcf26510392ff78321f3b47e741e0a7d087f259940b11299a37bf39675f42d34 done
+#31 naming to docker.io/library/my-project-sdd-api:latest done
+#31 unpacking to docker.io/library/my-project-sdd-api:latest 0.1s done
+#31 DONE 0.5s
+
+#32 [api] resolving provenance for metadata file
+#32 DONE 0.0s
+ Image my-project-sdd-api Built 
+ Image my-project-sdd-web Built 
+ Container my-project-sdd-api-1 Recreate 
+ Container my-project-sdd-api-1 Recreated 
+ Container my-project-sdd-web-1 Recreate 
+ Container my-project-sdd-web-1 Recreated 
+ Container my-project-sdd-api-1 Starting 
+ Container my-project-sdd-api-1 Started 
+ Container my-project-sdd-api-1 Waiting 
+ Container my-project-sdd-api-1 Healthy 
+ Container my-project-sdd-web-1 Starting 
+ Container my-project-sdd-web-1 Started 

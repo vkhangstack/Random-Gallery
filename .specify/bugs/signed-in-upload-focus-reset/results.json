@@ -1,0 +1,43 @@
+{
+  "accountBrowsers": [
+    {
+      "engine": "chromium",
+      "browserVersion": "153.0.8010.12",
+      "exitCode": 0,
+      "startTime": "2026-10-25T17:26:34.537Z",
+      "duration": 13237.001,
+      "expected": 15,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    {
+      "engine": "firefox",
+      "browserVersion": "155.0",
+      "exitCode": 0,
+      "startTime": "2026-10-25T17:27:01.684Z",
+      "duration": 18881.544,
+      "expected": 15,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    {
+      "engine": "webkit",
+      "browserVersion": "26.6",
+      "exitCode": 0,
+      "startTime": "2026-10-25T17:27:35.802Z",
+      "duration": 18376.965,
+      "expected": 15,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    }
+  ],
+  "unitTests": {
+    "passed": 19,
+    "failed": 0
+  },
+  "typecheck": "passed",
+  "productionBuild": "passed"
+}

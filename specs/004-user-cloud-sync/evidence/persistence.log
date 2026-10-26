@@ -1,0 +1,12 @@
+{
+  "passed": 5,
+  "failed": 0,
+  "browserVersion": "153.0.8010.12",
+  "checks": [
+    "non-root Go-only runtime, private API port, nginx configuration, origin denial, proxied health",
+    "API restart preserves all image bytes and favorite state",
+    "API container replacement preserves accounts, sessions and all image bytes",
+    "stopped-volume backup restores working credentials, exact image bytes and favorites into a separate volume",
+    "guest IndexedDB original bytes remain unchanged across API recreation and restore verification"
+  ]
+}

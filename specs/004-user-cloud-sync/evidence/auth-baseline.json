@@ -1,0 +1,184 @@
+{
+  "config": {
+    "argv": [
+      "/Users/vkhangstack/.nvm/versions/node/v24.16.0/bin/node",
+      "/Users/vkhangstack/Documents/Coding/my-project-sdd/node_modules/playwright/cli.js",
+      "test",
+      "--config=playwright.accounts.config.ts",
+      "--project=chromium",
+      "--grep",
+      "failed session lookup",
+      "--reporter=json"
+    ],
+    "configFile": "/Users/vkhangstack/Documents/Coding/my-project-sdd/playwright.accounts.config.ts",
+    "rootDir": "/Users/vkhangstack/Documents/Coding/my-project-sdd/tests/account",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/vkhangstack/Documents/Coding/my-project-sdd/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/vkhangstack/Documents/Coding/my-project-sdd/tests/account",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "/Users/vkhangstack/Documents/Coding/my-project-sdd/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/Users/vkhangstack/Documents/Coding/my-project-sdd/tests/account",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "/Users/vkhangstack/Documents/Coding/my-project-sdd/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/Users/vkhangstack/Documents/Coding/my-project-sdd/tests/account",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "auth.spec.ts",
+      "file": "auth.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "failed session lookup is visible and retryable",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 10385,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('alert')\nExpected substring: \u001b[32m\"Account service unavailable\"\u001b[39m\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" getByRole('alert') with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('alert')\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('alert')\nExpected substring: \u001b[32m\"Account service unavailable\"\u001b[39m\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" getByRole('alert') with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('alert')\u001b[22m\n\n    at /Users/vkhangstack/Documents/Coding/my-project-sdd/tests/account/auth.spec.ts:20:41",
+                    "location": {
+                      "file": "/Users/vkhangstack/Documents/Coding/my-project-sdd/tests/account/auth.spec.ts",
+                      "column": 41,
+                      "line": 20
+                    },
+                    "snippet": "  18 |   await page.route(\"**/api/auth/session\", r => r.fulfill({ status: 503, json: { error: \"Account service unavailable\" } }));\n  19 |   await page.goto(\"/\");\n> 20 |   await expect(page.getByRole(\"alert\")).toContainText(\"Account service unavailable\");\n     |                                         ^\n  21 |   await expect(page.getByRole(\"button\", { name: \"Retry account connection\" })).toBeVisible();\n  22 |   await page.unroute(\"**/api/auth/session\");\n  23 |   await page.getByRole(\"button\", { name: \"Retry account connection\" }).click();"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/vkhangstack/Documents/Coding/my-project-sdd/tests/account/auth.spec.ts",
+                        "column": 41,
+                        "line": 20
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('alert')\nExpected substring: \u001b[32m\"Account service unavailable\"\u001b[39m\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" getByRole('alert') with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('alert')\u001b[22m\n\n\n  18 |   await page.route(\"**/api/auth/session\", r => r.fulfill({ status: 503, json: { error: \"Account service unavailable\" } }));\n  19 |   await page.goto(\"/\");\n> 20 |   await expect(page.getByRole(\"alert\")).toContainText(\"Account service unavailable\");\n     |                                         ^\n  21 |   await expect(page.getByRole(\"button\", { name: \"Retry account connection\" })).toBeVisible();\n  22 |   await page.unroute(\"**/api/auth/session\");\n  23 |   await page.getByRole(\"button\", { name: \"Retry account connection\" }).click();\n    at /Users/vkhangstack/Documents/Coding/my-project-sdd/tests/account/auth.spec.ts:20:41"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-25T09:50:08.731Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/vkhangstack/Documents/Coding/my-project-sdd/test-results/auth-failed-session-lookup-is-visible-and-retryable-chromium/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/vkhangstack/Documents/Coding/my-project-sdd/test-results/auth-failed-session-lookup-is-visible-and-retryable-chromium/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/vkhangstack/Documents/Coding/my-project-sdd/tests/account/auth.spec.ts",
+                    "column": 41,
+                    "line": 20
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "d748ac400d08b85935ef-9e75a8ddcc28579e2856",
+          "file": "auth.spec.ts",
+          "line": 17,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-25T09:50:08.440Z",
+    "duration": 11058.168,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

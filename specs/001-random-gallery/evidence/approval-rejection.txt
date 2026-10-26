@@ -1,0 +1,10 @@
+Requested command:
+npm run test:e2e -- --reporter=json > /private/tmp/random-gallery-browser-approved.json 2> /private/tmp/random-gallery-browser-approved.stderr
+
+Requested via exec_command sandbox_permissions=require_escalated, with justification:
+May I run the full browser suite outside the sandbox so Vite can bind localhost and Playwright can launch browsers?
+
+Tool rejection (command did not execute):
+approval policy is Granular(GranularApprovalConfig { sandbox_approval: false, rules: false, skill_approval: false, request_permissions: true, mcp_elicitations: true }); reject command — you cannot ask for escalated permissions if the approval policy is Granular(GranularApprovalConfig { sandbox_approval: false, rules: false, skill_approval: false, request_permissions: true, mcp_elicitations: true })
+
+No alternative permission-granting tool was available. No restriction was bypassed.

@@ -1,0 +1,13 @@
+[
+  {
+    "engine": "chromium",
+    "browserVersion": "153.0.8010.12",
+    "exitCode": 1,
+    "startTime": "2026-10-25T17:21:59.851Z",
+    "duration": 11413.73,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+]

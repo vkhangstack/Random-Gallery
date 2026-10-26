@@ -1,0 +1,4 @@
+Command-specific request: npm run test:e2e -- tests/e2e/accessibility-responsive.spec.ts tests/e2e/gallery-management.spec.ts tests/e2e/random-favorites.spec.ts tests/integration/pending-uploads.spec.ts tests/integration/storage-favorites.spec.ts --reporter=json
+Requested sandbox_permissions=require_escalated, no global setting changes.
+Tool rejected before execution: approval policy is Granular(GranularApprovalConfig { sandbox_approval: false, rules: false, skill_approval: false, request_permissions: true, mcp_elicitations: true }); reject command — you cannot ask for escalated permissions.
+No further server/test startup retries attempted.

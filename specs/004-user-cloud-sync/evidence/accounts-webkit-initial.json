@@ -1,0 +1,657 @@
+{
+  "config": {
+    "argv": [
+      "/Users/vkhangstack/.nvm/versions/node/v24.16.0/bin/node",
+      "/Users/vkhangstack/Documents/Coding/my-project-sdd/node_modules/playwright/cli.js",
+      "test",
+      "--config=playwright.accounts.config.ts",
+      "--project=webkit",
+      "--reporter=json"
+    ],
+    "configFile": "/Users/vkhangstack/Documents/Coding/my-project-sdd/playwright.accounts.config.ts",
+    "rootDir": "/Users/vkhangstack/Documents/Coding/my-project-sdd/tests/account",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/vkhangstack/Documents/Coding/my-project-sdd/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/vkhangstack/Documents/Coding/my-project-sdd/tests/account",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "/Users/vkhangstack/Documents/Coding/my-project-sdd/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/Users/vkhangstack/Documents/Coding/my-project-sdd/tests/account",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "/Users/vkhangstack/Documents/Coding/my-project-sdd/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/Users/vkhangstack/Documents/Coding/my-project-sdd/tests/account",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "auth.spec.ts",
+      "file": "auth.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "register, restore, invalid login and logout",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2457,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-25T10:20:00.793Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d748ac400d08b85935ef-05c2b7627f9336a91f37",
+          "file": "auth.spec.ts",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "failed session lookup is visible and retryable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 363,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-25T10:20:10.132Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d748ac400d08b85935ef-39f792acb1edc8d3a563",
+          "file": "auth.spec.ts",
+          "line": 17,
+          "column": 1
+        },
+        {
+          "title": "shared-cookie changes notify another tab and tab return rechecks",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1577,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-25T10:20:10.504Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d748ac400d08b85935ef-8b2ccaa1bd18f25c3aa8",
+          "file": "auth.spec.ts",
+          "line": 26,
+          "column": 1
+        },
+        {
+          "title": "auth URLs are dedicated pages and successful/signed-in auth redirects home",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1274,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-25T10:20:12.090Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d748ac400d08b85935ef-98b1b23600058f685aa4",
+          "file": "auth.spec.ts",
+          "line": 40,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "cloud-sync.spec.ts",
+      "file": "cloud-sync.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "three formats synchronize original content into another browser",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1677,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-25T10:20:13.377Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "eebc80ca66e18ebf17d0-08aa20c50c2526616c2d",
+          "file": "cloud-sync.spec.ts",
+          "line": 4,
+          "column": 1
+        },
+        {
+          "title": "pending and failed upload never reports saved",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 692,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-25T10:20:15.061Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "eebc80ca66e18ebf17d0-c556568e810ea238bc8f",
+          "file": "cloud-sync.spec.ts",
+          "line": 37,
+          "column": 1
+        },
+        {
+          "title": "lost upload response is recovered by refresh without automatic replay",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 650,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m201\u001b[39m\nReceived: \u001b[31m400\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m201\u001b[39m\nReceived: \u001b[31m400\u001b[39m\n    at /Users/vkhangstack/Documents/Coding/my-project-sdd/tests/account/cloud-sync.spec.ts:61:31",
+                    "location": {
+                      "file": "/Users/vkhangstack/Documents/Coding/my-project-sdd/tests/account/cloud-sync.spec.ts",
+                      "column": 31,
+                      "line": 61
+                    },
+                    "snippet": "  59 |     if (route.request().method() !== \"POST\") return route.continue();\n  60 |     const response = await route.fetch();\n> 61 |     expect(response.status()).toBe(201);\n     |                               ^\n  62 |     await route.abort(\"failed\");\n  63 |   });\n  64 |   await page.getByLabel(\"Upload images\").setInputFiles(\"tests/fixtures/landscape.png\");"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/vkhangstack/Documents/Coding/my-project-sdd/tests/account/cloud-sync.spec.ts",
+                        "column": 31,
+                        "line": 61
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m201\u001b[39m\nReceived: \u001b[31m400\u001b[39m\n\n  59 |     if (route.request().method() !== \"POST\") return route.continue();\n  60 |     const response = await route.fetch();\n> 61 |     expect(response.status()).toBe(201);\n     |                               ^\n  62 |     await route.abort(\"failed\");\n  63 |   });\n  64 |   await page.getByLabel(\"Upload images\").setInputFiles(\"tests/fixtures/landscape.png\");\n    at /Users/vkhangstack/Documents/Coding/my-project-sdd/tests/account/cloud-sync.spec.ts:61:31"
+                    },
+                    {
+                      "location": {
+                        "file": "/Users/vkhangstack/Documents/Coding/my-project-sdd/tests/account/cloud-sync.spec.ts",
+                        "column": 54,
+                        "line": 65
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('0 saved · 1 failed')\nExpected: visible\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByText('0 saved · 1 failed') with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByText('0 saved · 1 failed')\u001b[22m\n\u001b[2m  - Test ended.\u001b[22m\n\n\n  63 |   });\n  64 |   await page.getByLabel(\"Upload images\").setInputFiles(\"tests/fixtures/landscape.png\");\n> 65 |   await expect(page.getByText(\"0 saved · 1 failed\")).toBeVisible();\n     |                                                      ^\n  66 |   await page.unroute(\"**/api/images\");\n  67 |   await page.getByRole(\"button\", { name: \"Refresh account collection\" }).click();\n  68 |   await expect(page.getByText(\"1 image · saved to your account\")).toBeVisible();\n    at /Users/vkhangstack/Documents/Coding/my-project-sdd/tests/account/cloud-sync.spec.ts:65:54"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-25T10:20:15.759Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/vkhangstack/Documents/Coding/my-project-sdd/test-results/cloud-sync-lost-upload-res-48d08-sh-without-automatic-replay-webkit/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/vkhangstack/Documents/Coding/my-project-sdd/test-results/cloud-sync-lost-upload-res-48d08-sh-without-automatic-replay-webkit/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/vkhangstack/Documents/Coding/my-project-sdd/tests/account/cloud-sync.spec.ts",
+                    "column": 31,
+                    "line": 61
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "eebc80ca66e18ebf17d0-d3fbe3ef7ffb42f4dc40",
+          "file": "cloud-sync.spec.ts",
+          "line": 56,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "guest-preservation.spec.ts",
+      "file": "guest-preservation.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "guest image remains local and survives account sign-in and sign-out",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 10468,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('1 saved · 0 failed')\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByText('1 saved · 0 failed') with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByText('1 saved · 0 failed')\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('1 saved · 0 failed')\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByText('1 saved · 0 failed') with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByText('1 saved · 0 failed')\u001b[22m\n\n    at /Users/vkhangstack/Documents/Coding/my-project-sdd/tests/account/guest-preservation.spec.ts:6:54",
+                    "location": {
+                      "file": "/Users/vkhangstack/Documents/Coding/my-project-sdd/tests/account/guest-preservation.spec.ts",
+                      "column": 54,
+                      "line": 6
+                    },
+                    "snippet": "  4 |   await page.goto(\"/\");\n  5 |   await page.getByLabel(\"Upload images\").setInputFiles(\"tests/fixtures/landscape.png\");\n> 6 |   await expect(page.getByText(\"1 saved · 0 failed\")).toBeVisible();\n    |                                                      ^\n  7 |   const before = await page.evaluate(async () => {\n  8 |     const db = await new Promise<IDBDatabase>((resolve, reject) => { const r = indexedDB.open(\"random-gallery\", 1); r.onsuccess = () => resolve(r.result); r.onerror = () => reject(r.error); });\n  9 |     const result = await new Promise<unknown>((resolve) => { const r = db.transaction(\"images\").objectStore(\"images\").getAll(); r.onsuccess = () => resolve(r.result); }); db.close(); return result;"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/vkhangstack/Documents/Coding/my-project-sdd/tests/account/guest-preservation.spec.ts",
+                        "column": 54,
+                        "line": 6
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('1 saved · 0 failed')\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByText('1 saved · 0 failed') with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByText('1 saved · 0 failed')\u001b[22m\n\n\n  4 |   await page.goto(\"/\");\n  5 |   await page.getByLabel(\"Upload images\").setInputFiles(\"tests/fixtures/landscape.png\");\n> 6 |   await expect(page.getByText(\"1 saved · 0 failed\")).toBeVisible();\n    |                                                      ^\n  7 |   const before = await page.evaluate(async () => {\n  8 |     const db = await new Promise<IDBDatabase>((resolve, reject) => { const r = indexedDB.open(\"random-gallery\", 1); r.onsuccess = () => resolve(r.result); r.onerror = () => reject(r.error); });\n  9 |     const result = await new Promise<unknown>((resolve) => { const r = db.transaction(\"images\").objectStore(\"images\").getAll(); r.onsuccess = () => resolve(r.result); }); db.close(); return result;\n    at /Users/vkhangstack/Documents/Coding/my-project-sdd/tests/account/guest-preservation.spec.ts:6:54"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-25T10:20:16.732Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/vkhangstack/Documents/Coding/my-project-sdd/test-results/guest-preservation-guest-i-44439-ccount-sign-in-and-sign-out-webkit/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/vkhangstack/Documents/Coding/my-project-sdd/test-results/guest-preservation-guest-i-44439-ccount-sign-in-and-sign-out-webkit/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/vkhangstack/Documents/Coding/my-project-sdd/tests/account/guest-preservation.spec.ts",
+                    "column": 54,
+                    "line": 6
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "4784ec0db413b2199594-0cd61d2daac7bad13c2b",
+          "file": "guest-preservation.spec.ts",
+          "line": 3,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "privacy-lifecycle.spec.ts",
+      "file": "privacy-lifecycle.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "favorite and deletion sync after refresh and deny another owner",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1936,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-25T10:20:27.700Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "28034a336c9fc6cc2c0b-b37fd1eafd8600505aca",
+          "file": "privacy-lifecycle.spec.ts",
+          "line": 8,
+          "column": 1
+        },
+        {
+          "title": "failed favorite and deletion preserve confirmed state and retry succeeds",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 975,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-25T10:20:29.845Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "28034a336c9fc6cc2c0b-7e051f43f7171bd8ec87",
+          "file": "privacy-lifecycle.spec.ts",
+          "line": 28,
+          "column": 1
+        },
+        {
+          "title": "account switch cancels an old upload batch and releases old image URLs",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1222,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-25T10:20:30.825Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "28034a336c9fc6cc2c0b-b2f8d59d252d4e08d558",
+          "file": "privacy-lifecycle.spec.ts",
+          "line": 46,
+          "column": 1
+        },
+        {
+          "title": "revoked session during a mutation clears private content without false save",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 661,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-25T10:20:32.055Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "28034a336c9fc6cc2c0b-87773763d587e17c3cbd",
+          "file": "privacy-lifecycle.spec.ts",
+          "line": 71,
+          "column": 1
+        },
+        {
+          "title": "late private content read cannot repopulate the signed-out view",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 799,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-25T10:20:32.723Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "28034a336c9fc6cc2c0b-eb657fe1c1598ce61fe2",
+          "file": "privacy-lifecycle.spec.ts",
+          "line": 79,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-25T10:20:00.504Z",
+    "duration": 33054.765,
+    "expected": 11,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}

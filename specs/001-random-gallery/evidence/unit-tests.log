@@ -1,0 +1,31 @@
+
+> random-gallery@1.0.0 test
+> node --experimental-strip-types --test tests/unit/*.test.ts
+
+✔ trimmed case-insensitive substring search intersects favorites (0.885ms)
+✔ filter preserves records, order and input (0.203458ms)
+✔ empty and single collections (0.4495ms)
+✔ every candidate bucket is reachable without choosing current (0.097708ms)
+✔ two-image collection alternates for 100 selections without mutation (0.437ms)
+✔ many-image and favorite subsets never repeat or escape their eligible set (0.291041ms)
+✔ every alternative in a larger set has a matching uniform sampling bucket (0.081625ms)
+✔ Node supports blobs (0.518042ms)
+✔ storage errors provide actionable messages without false success (0.531542ms)
+✔ missing IndexedDB rejects loading instead of returning an empty collection (0.501625ms)
+✔ synchronous open denial is retryable and does not poison the cached open promise (0.175958ms)
+✔ a blocked open rejects with recovery guidance and closes its late connection (0.165458ms)
+✔ validates image/png from content even with misleading name/type (1.311958ms)
+✔ validates image/jpeg from content even with misleading name/type (0.125875ms)
+✔ validates image/webp from content even with misleading name/type (0.107167ms)
+✔ rejects empty, unsupported, oversized, and undecodable files (3.938541ms)
+✔ accepts exact size boundary (3.524625ms)
+✔ temporary decode URLs are released on success and failure (1.342ms)
+✔ fallback load/error decoding retains its URL until completion and releases it afterward (0.292208ms)
+ℹ tests 19
+ℹ suites 0
+ℹ pass 19
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 129.154458

@@ -1,0 +1,141 @@
+{
+  "accountMatrix": [
+    {
+      "engine": "chromium",
+      "browserVersion": "153.0.8010.12",
+      "exitCode": 0,
+      "startTime": "2026-10-25T17:26:34.537Z",
+      "duration": 13237.001,
+      "expected": 15,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    {
+      "engine": "firefox",
+      "browserVersion": "155.0",
+      "exitCode": 0,
+      "startTime": "2026-10-25T17:27:01.684Z",
+      "duration": 18881.544,
+      "expected": 15,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    {
+      "engine": "webkit",
+      "browserVersion": "26.6",
+      "exitCode": 0,
+      "startTime": "2026-10-25T17:27:35.802Z",
+      "duration": 18376.965,
+      "expected": 15,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    }
+  ],
+  "goRace": {
+    "passed": 14,
+    "failed": 0
+  },
+  "frontendUnits": {
+    "passed": 19,
+    "failed": 0,
+    "skipped": 0
+  },
+  "persistence": {
+    "passed": 5,
+    "failed": 0,
+    "checks": [
+      "non-root Go-only runtime, private API port, nginx configuration, origin denial, proxied health",
+      "API restart preserves all image bytes and favorite state",
+      "API container replacement preserves accounts, sessions and all image bytes",
+      "stopped-volume backup restores working credentials, exact image bytes and favorites into a separate volume",
+      "guest IndexedDB original bytes remain unchanged across API recreation and restore verification"
+    ]
+  },
+  "guestInitialFullRun": {
+    "startTime": "2026-10-25T16:53:09.080Z",
+    "duration": 72377.845,
+    "expected": 149,
+    "skipped": 1,
+    "unexpected": 9,
+    "flaky": 0
+  },
+  "guestTargetedHarnessRerun": {
+    "startTime": "2026-10-25T16:57:39.542Z",
+    "duration": 45751.848,
+    "expected": 9,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "remainingGuestFocusFailures": [
+    {
+      "name": "complete primary keyboard journey in light theme",
+      "project": "chromium",
+      "location": {
+        "file": "/Users/vkhangstack/Documents/Coding/my-project-sdd/tests/e2e/accessibility-responsive.spec.ts",
+        "column": 9,
+        "line": 101
+      },
+      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m"
+    },
+    {
+      "name": "complete primary keyboard journey in dark theme",
+      "project": "chromium",
+      "location": {
+        "file": "/Users/vkhangstack/Documents/Coding/my-project-sdd/tests/e2e/accessibility-responsive.spec.ts",
+        "column": 9,
+        "line": 101
+      },
+      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m"
+    },
+    {
+      "name": "complete primary keyboard journey in light theme",
+      "project": "webkit",
+      "location": {
+        "file": "/Users/vkhangstack/Documents/Coding/my-project-sdd/tests/e2e/accessibility-responsive.spec.ts",
+        "column": 9,
+        "line": 101
+      },
+      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m"
+    },
+    {
+      "name": "complete primary keyboard journey in dark theme",
+      "project": "webkit",
+      "location": {
+        "file": "/Users/vkhangstack/Documents/Coding/my-project-sdd/tests/e2e/accessibility-responsive.spec.ts",
+        "column": 9,
+        "line": 101
+      },
+      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m"
+    },
+    {
+      "name": "closing a preview whose trigger was filtered out restores focus to Gallery controls",
+      "project": "webkit",
+      "location": {
+        "file": "/Users/vkhangstack/Documents/Coding/my-project-sdd/tests/e2e/gallery-management.spec.ts",
+        "column": 5,
+        "line": 119
+      },
+      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeFocused\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('heading', { name: 'Your gallery.', exact: true })\nExpected: focused\nReceived: inactive\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeFocused\" getByRole('heading', { name: 'Your gallery.', exact: true }) with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'Your gallery.', exact: true })\u001b[22m\n\u001b[2m    23 \u00d7 locator resolved to <h1 tabindex=\"-1\">Your gallery.</h1>\u001b[22m\n\u001b[2m       - unexpected value \"inactive\"\u001b[22m\n"
+    }
+  ],
+  "guestSkipped": [
+    {
+      "name": "legacy Blob records remain readable without migration",
+      "project": "webkit"
+    }
+  ],
+  "note": "Initial full guest run and targeted rerun are separate actual executions, not a fabricated single passing suite.",
+  "deployment": {
+    "url": "http://127.0.0.1:8081",
+    "apiHealth": "healthy",
+    "webHealth": "healthy",
+    "apiUser": "gallery",
+    "apiImage": "sha256:e9046811200d89e591d46ed798d605adcb7b11cda64754c5ae081a111d5e459c",
+    "frontendAsset": "/assets/index-DUlL47Gm.js"
+  },
+  "latestFix": "signed-in-upload-focus-reset"
+}
